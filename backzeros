@@ -1,0 +1,19 @@
+import assert from "assert";
+
+function endZeros(value: number): number {
+
+    let endzone = value.toString();
+    let zeros = endzone.replace(/^.*[^0*](0*)$/,'$1').length;
+    return zeros;
+}
+
+//or
+
+function endZeros(value: number): number {
+    // your code here
+    let valueArr = value.toString().split('');
+    let count = 0;
+    while(valueArr.pop() === '0')
+        count++;
+    return count;
+}
