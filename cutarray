@@ -1,0 +1,11 @@
+
+function removeAllBefore(values: number[], b: number): number[] {
+    // your code here
+   let cutHere = values.indexOf(b);
+    if (cutHere === -1){
+        return values;
+    }
+   let endHere = values.length - 1;
+   let done = values.slice(cutHere, values.length);
+   return done;
+}
