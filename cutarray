@@ -9,3 +9,9 @@ function removeAllBefore(values: number[], b: number): number[] {
    let done = values.slice(cutHere, values.length);
    return done;
 }
+
+//or
+
+var removeAllBefore = (v, b) => v.includes(b) ? v.slice(v.indexOf(b)) : v
+
+
