@@ -1,0 +1,21 @@
+function threeWords(text: string): boolean {
+    let array = text.split(" ");
+    let counter = 0;
+    for( let i = 0; i <= array.length-1; i++){
+       console.log(array[i]);
+        let holder = parseInt(array[i]);
+       console.log(holder);
+        if (isNaN(holder)){ 
+            counter++;
+         console.log(holder);
+        }else {
+            counter = 0;   
+        }
+        if (counter == 3){
+        return true;
+        }
+     }
+    
+        return false;
+  }
+  
