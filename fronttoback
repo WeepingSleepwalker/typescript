@@ -1,1 +1,11 @@
+function replaceFirst(values: number[]): number[] {
+    if (values === undefined || values.length == 0) {
+    // array empty or does not exist
+    return values;
+    }
+    let first = values.shift();
+    let answer = values.concat(first);
+ 
+    return answer;
+}
 
