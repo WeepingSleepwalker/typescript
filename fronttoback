@@ -3,7 +3,9 @@ function replaceFirst(values: number[]): number[] {
     // array empty or does not exist
     return values;
     }
+    //take out the first number
     let first = values.shift();
+    //add it to the back
     let answer = values.concat(first);
  
     return answer;
